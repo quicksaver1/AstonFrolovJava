@@ -1,4 +1,4 @@
-package com.example.AstonFrolovJava;
+package main;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -48,7 +48,7 @@ public class Main extends Application {
         // Задача 3: на входе есть числовой массив, необходимо вывести элементы массива кратные 3
         TextField arrayInput = new TextField();
         arrayInput.setPromptText("Введите числовой массив через пробел");
-        Button checkArrayButton = new Button("Вывести числа кратные трем");
+        Button checkArrayButton = new Button("Вывести числа кратные трём");
         checkArrayButton.setOnAction(e -> {
             try {
                 String[] numbers = arrayInput.getText().split(" ");
@@ -67,7 +67,7 @@ public class Main extends Application {
             }
         });
 
-        root.getChildren().addAll(new Label("Задача 3:"), arrayInput, checkArrayButton);
+        root.getChildren().addAll(new Label("Алгоритм 3:"), arrayInput, checkArrayButton);
         root.getChildren().add(console);
 
         Scene scene = new Scene(root, 400, 300);

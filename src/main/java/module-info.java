@@ -1,8 +1,8 @@
-module com.example.demo {
+module main {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.AstonFrolovJava to javafx.fxml;
-    exports com.example.AstonFrolovJava;
+    opens main to javafx.fxml;
+    exports main;
 }
